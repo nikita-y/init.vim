@@ -4,12 +4,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
-Plug 'joshdick/onedark.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 Plug 'arcticicestudio/nord-vim'
-"Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 
@@ -27,12 +25,10 @@ set t_Co=256    " Tell the term has 256 colors
 set mouse=a     " Enable mouse
 set colorcolumn=100
 set path+=**    " makes :find recursive (fuzzy serach)
-"set title       " filename in title
-" set titleold=   " reset window title after closing vim
+
 " --- User shotrcuts ---
 nnoremap <silent> <F9> :TagbarToggle<CR>
 nnoremap <silent> <F8> :NERDTreeToggle<CR>
-"map <silent> <D-b> :!python3 %<CR>
 "nnoremap <silent> <F2> "+p
 "vnoremap <silent> <F3> "+y
 
@@ -61,12 +57,10 @@ set hidden          " Hide buffers when they are abandoned
 set wrap
 set linebreak
 set showbreak=~
+
 " --- Themes ---
 colorscheme nord
+
 " --- Plugins ---
 " --- airline plugin ---
-" set laststatus=2 " needed to show airline in classic vim
 let g:airline_theme='nord'
-" tmuxline
-" let g:tmuxline_preset = 'nightly_fox'
-" let g:tmuxline_powerline_separators = 0
